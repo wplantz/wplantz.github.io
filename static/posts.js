@@ -1,19 +1,19 @@
 //File:posts.js
 //Author: Carlos Sotello
 //Purpose: Fills blog page with posts
-post = { // example post until db is made
+item = { // example post until db is made
     title:"Example title",
     text:"Post text",
     author:"Whitney Plantz",
     timestamp:"1/29/21"
 }
-posts = [post] // represents list of posts to be made later
+posts = [item] // represents list of posts to be made later
 let container = document.getElementById("container")
 /*
 while(container.firstChild)//Remove any prior blog posts 
     container.remove(container.firstChild)
 */
-console.log("posts has " + post.lenght + " items")
+console.log("posts has " + posts.length + " items")
 posts.forEach(post => { // create and append each post
     let title = document.createElement("h2")
     let text = document.createElement("p")
