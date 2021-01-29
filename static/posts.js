@@ -13,7 +13,8 @@ let container = document.getElementById("container")
 while(container.firstChild)//Remove any prior blog posts 
     container.remove(container.firstChild)
 */
-posts.array.forEach(post => { // create and append each post
+console.log("posts has " + post.lenght + " items")
+posts.forEach(post => { // create and append each post
     let title = document.createElement("h2")
     let text = document.createElement("p")
     let details = document.createElement("h5")
